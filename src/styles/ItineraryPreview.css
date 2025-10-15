@@ -421,23 +421,20 @@
   }
 
   /* Footer repeated per printed page */
-  .pdf-footer {
-    position: relative !important;
-    bottom: auto !important;
+  .footer {
+    position: fixed;
+    bottom: 0;
     left: 0;
     right: 0;
-    text-align: center;
-    padding: 15px 0 10px;
-    font-size: 11px;
-    color: var(--vg-gray);
+    width: 100%;
     border-top: 1px solid #ddd;
     background: white;
-    margin-top: 60px !important;
+    padding: 20px 40px;
     page-break-inside: avoid;
   }
 
-  .no-break {
-    page-break-inside: avoid;
+  body {
+    margin-bottom: 120px !important;
   }
 
 }

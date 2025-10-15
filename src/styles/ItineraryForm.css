@@ -1,0 +1,75 @@
+@import "./variables.css";
+
+.itinerary-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--vg-text-dark);
+  margin-bottom: 4px;
+}
+
+.form-group input,
+textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 13px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-section h3 {
+  font-size: 14px;
+  color: var(--vg-purple);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.add-btn {
+  background-color: var(--vg-lavender);
+  color: var(--vg-purple);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #dc2626;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.day-form-container {
+  border: 1px solid var(--vg-border);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #faf9fe;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}

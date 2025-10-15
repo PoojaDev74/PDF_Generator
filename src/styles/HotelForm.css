@@ -1,0 +1,19 @@
+@import "./variables.css";
+
+
+.hotel-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.hotel-form input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.hotel-form input:focus {
+  outline: 2px solid var(--vg-purple);
+}

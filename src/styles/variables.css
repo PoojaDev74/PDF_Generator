@@ -1,0 +1,13 @@
+:root {
+  --vg-purple: #2c2653;
+  --vg-accent: #271f46;
+  --vg-lavender: #ede6fb;
+  --vg-light-purple: #dcc5ea;
+  --vg-border: #e6defb;
+  --vg-text-dark: #423266;
+  --vg-gray: #6b7280;
+
+  --font-family: "Inter", Arial, sans-serif;
+  --font-size-base: 13px;
+  --font-size-heading: 15px;
+}

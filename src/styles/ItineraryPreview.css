@@ -1,0 +1,443 @@
+@import "./variables.css";
+
+/* ========== GLOBAL STYLES ========== */
+.itinerary-preview {
+  width: 794px; /* A4 width at 96dpi */
+  margin: auto;
+  background: white;
+  color: var(--vg-text-dark);
+  font-size: var(--font-size-base);
+  line-height: 1.4;
+  page-break-after: auto;
+}
+
+/* ========== HEADER ========== */
+.itinerary-header {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.logo {
+  color: var(--vg-purple);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 10px;
+  color: var(--vg-gray);
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.header-banner {
+  background: linear-gradient(90deg, var(--vg-purple), var(--vg-accent));
+  color: white;
+  border-radius: 12px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-banner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+/* ========== TRIP SUMMARY ========== */
+.trip-summary {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px;
+  background: white;
+  margin-top: 20px;
+  page-break-inside: avoid;
+}
+
+/* ====== TIMELINE STYLING (UPDATED) ====== */
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.timeline-card {
+  display: grid;
+  grid-template-columns: 60px 130px 20px 1fr;
+  align-items: start;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 24px 20px;
+  position: relative;
+  column-gap: 20px;
+}
+
+.day-label {
+  background: linear-gradient(180deg, #2c2653, #271f46);
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 5px;
+  height: 100%;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-photo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6912a8;
+}
+
+.timeline-date {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #000;
+}
+
+.timeline-title {
+  font-size: 13px;
+  color: #555;
+}
+
+.timeline-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 130px;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #2b0e87, #6a0dad);
+  z-index: 0;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: #2b0e87;
+  border-radius: 50%;
+  z-index: 2;
+  margin: 20px 0;
+  border: 2px solid #fff;
+}
+
+.timeline-details {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.timeline-details div {
+  margin-bottom: 8px;
+}
+
+.timeline-details strong {
+  color: #000;
+  display: inline-block;
+  width: 100px;
+}
+
+.timeline-details ul {
+  margin: 6px 0 10px 20px;
+  padding: 0;
+  list-style-type: disc;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.timeline-details li {
+  margin-bottom: 4px;
+}
+
+
+
+/* ========== SECTION LAYOUT ========== */
+.section {
+  padding: 20px 40px;
+  margin-top: 20px;
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+
+.section h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--vg-purple);
+  margin-bottom: 10px;
+}
+
+/* ========== PURPLE CARD CONTAINER ========== */
+.purple-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 8px;
+  border: 1px solid var(--vg-border);
+  page-break-inside: avoid;
+}
+
+/* ========== TABLE STYLES ========== */
+.styled-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.styled-table th {
+  background: linear-gradient(90deg, var(--vg-purple), var(--vg-accent));
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border: none;
+}
+
+.styled-table td {
+  background: var(--vg-light-purple);
+  padding: 10px 12px;
+  border-top: 1px solid var(--vg-border);
+  color: var(--vg-text-dark);
+  line-height: 1.5;
+}
+
+.styled-table tr:first-child td {
+  border-top: none;
+}
+
+.styled-table th:first-child {
+  border-top-left-radius: 10px;
+}
+.styled-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.purple-card .styled-table {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ========== FOOTNOTE TEXT ========== */
+.tiny-text {
+  font-size: 11px;
+  margin-top: 8px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* ========== VISA SECTION ========== */
+.visa-box {
+  background: var(--vg-light-purple);
+  border: 1px solid var(--vg-border);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  page-break-inside: avoid;
+}
+
+.visa-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--vg-text-dark);
+  font-size: 13px;
+}
+
+.visa-info {
+  background: white;
+  border: 1px solid var(--vg-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  flex: 1;
+}
+
+.visa-info p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+/* ========== TERMS SECTION ========== */
+.terms-box {
+  background: var(--vg-light-purple);
+  border: 1px solid var(--vg-border);
+  border-radius: 8px;
+  padding: 16px;
+  page-break-inside: avoid;
+}
+
+.terms-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--vg-text-dark);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ========== CTA BANNER ========== */
+.cta-banner {
+  text-align: center;
+  background: linear-gradient(90deg, var(--vg-purple), var(--vg-accent));
+  color: white;
+  margin: 40px auto 0;
+  width: 90%;
+  border-radius: 12px;
+  padding: 24px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  page-break-inside: avoid;
+}
+
+.cta-banner h2 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.cta-banner p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* ========== FOOTER (VISIBLE + PRINT) ========== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px 40px;
+  border-top: 1px solid #e5e7eb;
+  background: white;
+  font-size: 13px;
+  color: #333;
+  flex-wrap: wrap;
+  page-break-inside: avoid;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-left h3 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.footer-left p {
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 1.8;
+}
+
+.footer-center strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-logo {
+  color: var(--vg-purple, #5b21b6);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.footer-tagline {
+ color: var(--vg-accent, #8b5cf6);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+/* ========== PRINT + PDF OPTIMIZATION ========== */
+@media print {
+  /* Preserve colors & gradients */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .purple-card,
+  .day-card,
+  .section {
+    page-break-inside: avoid;
+  }
+
+  /* Footer repeated per printed page */
+  .pdf-footer {
+    position: relative !important;
+    bottom: auto !important;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 0 10px;
+    font-size: 11px;
+    color: var(--vg-gray);
+    border-top: 1px solid #ddd;
+    background: white;
+    margin-top: 60px !important; /* adds extra gap before footer */
+    page-break-inside: avoid;
+  }
+
+  .no-break {
+    page-break-inside: avoid;
+  }
+
+}

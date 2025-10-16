@@ -36,7 +36,10 @@ export async function generatePdfFromElement(element, { filename = "Itinerary.pd
 
     pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c63c25b (Add src/assets/logo.jpg)
     pdf.save(filename);
   } catch (err) {
     console.error("PDF generation failed:", err);

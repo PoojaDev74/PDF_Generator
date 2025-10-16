@@ -16,7 +16,7 @@ export default function ItineraryPreview({ data }) {
                <img
                     src={logo}
                     alt="Vigovia Logo"
-                    className="logo-image"
+                    className="logo"
                 />
                 <p className="tagline">travel & tours</p>
                 <div className="header-banner">

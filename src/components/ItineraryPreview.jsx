@@ -5,6 +5,7 @@ import day1 from "../assets/day1.jpg";
 import day2 from "../assets/day2.jpg";
 import day3 from "../assets/day3.jpg";
 import day4 from "../assets/day4.jpg";
+import logo from "../assets/logo.jpg";
 
 export default function ItineraryPreview({ data }) {
     const dayImages = [day1, day2, day3, day4];
@@ -12,7 +13,11 @@ export default function ItineraryPreview({ data }) {
         <div className="itinerary-preview">
             {/* HEADER */}
             <header className="itinerary-header">
-                <h1 className="logo">Vigovia</h1>
+               <img
+                    src={logo}
+                    alt="Vigovia Logo"
+                    className="logo-image"
+                />
                 <p className="tagline">travel & tours</p>
                 <div className="header-banner">
                     <p className="welcome">{data.userName || "Hi, Pooja!"}</p>

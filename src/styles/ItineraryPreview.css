@@ -2,7 +2,7 @@
 
 /* ========== GLOBAL STYLES ========== */
 .itinerary-preview {
-  width: 794px; /* A4 width at 96dpi */
+  width: 794px; 
   margin: auto;
   background: white;
   color: var(--vg-text-dark);
@@ -432,7 +432,7 @@
     color: var(--vg-gray);
     border-top: 1px solid #ddd;
     background: white;
-    margin-top: 60px !important; /* adds extra gap before footer */
+    margin-top: 60px !important; 
     page-break-inside: avoid;
   }
 

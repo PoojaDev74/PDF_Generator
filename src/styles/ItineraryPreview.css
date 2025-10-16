@@ -421,7 +421,7 @@
   }
 
   /* Footer repeated per printed page */
-  .pdf-footer {
+  .footer {
     position: relative !important;
     bottom: auto !important;
     left: 0;
@@ -436,8 +436,7 @@
     page-break-inside: avoid;
   }
 
-  .no-break {
-    page-break-inside: avoid;
+  body {
+    margin-bottom: 120px !important;
   }
-
 }

@@ -14,12 +14,6 @@
 
 ---
 
-## 🔗 Live Demo 
-
-(https://bookingpdfgenerator.netlify.app/)
-
----
-
 ## 🛠 Tech Stack
 Frontend: HTML, CSS, JavaScript (React)
 

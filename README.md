@@ -27,6 +27,9 @@ PDF generation: (e.g. jsPDF, pdfmake, html2pdf, or similar)
 
 Hosting: Netlify
 
+#### 🔗 Live Demo
+https://bookingpdfgenerator.netlify.app
+
 ## 🚀 Getting Started
 ```bash
 # 1️⃣ Clone the repo

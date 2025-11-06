@@ -94,7 +94,7 @@ export default function App() {
     <div className="app-container bg-gray-50 min-h-screen p-6">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-2xl font-semibold mb-4 text-vgPurple">
-          Vigovia — Itinerary Builder 
+          Itinerary Builder 
         </h1>
 
         <div className="grid lg:grid-cols-2 gap-6">

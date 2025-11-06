@@ -5,6 +5,7 @@ import day1 from "../assets/day1.jpg";
 import day2 from "../assets/day2.jpg";
 import day3 from "../assets/day3.jpg";
 import day4 from "../assets/day4.jpg";
+import logo from "../assets/logo.jpg";
 
 export default function ItineraryPreview({ data }) {
     const dayImages = [day1, day2, day3, day4];
@@ -12,8 +13,12 @@ export default function ItineraryPreview({ data }) {
         <div className="itinerary-preview">
             {/* HEADER */}
             <header className="itinerary-header">
-                <h1 className="logo">Vigovia</h1>
-                <p className="tagline">travel & tours</p>
+                <img
+                    src={logo}
+                    alt="The Travel Tribe"
+                    className="logo"
+                />
+                <p className="tagline">The Travel Tribe</p>
                 <div className="header-banner">
                     <p className="welcome">{data.userName || "Hi, Pooja!"}</p>
                     <h2>{data.tourTitle || "Singapore Itinerary"}</h2>
@@ -265,7 +270,7 @@ export default function ItineraryPreview({ data }) {
             {/* FOOTER */}
             <footer className="footer">
                 <div className="footer-left">
-                    <h3>Vigovia Tech Pvt. Ltd</h3>
+                    <h3>The Travel Tribe Pvt. Ltd</h3>
                     <p>
                         Registered Office: HD-109 Cinnabar Hills,<br />
                         Links Business Park, Karnataka, India.
@@ -275,13 +280,13 @@ export default function ItineraryPreview({ data }) {
                 <div className="footer-center">
                     <p>
                         <strong>Phone:</strong> +91-9504061112<br />
-                        <strong>Email ID:</strong> Utkarsh@Vigovia.com<br />
+                        <strong>Email ID:</strong> Utkarsh@TheTravelTribe.com<br />
                         <strong>CIN:</strong> U79110KA2024PTC191890
                     </p>
                 </div>
 
                 <div className="footer-right">
-                    <h2 className="footer-logo">vigovia</h2>
+                    <h2 className="footer-logo">The Travel Tribe</h2>
                     <p className="footer-tagline">PLAN.PACK.GO ✈️</p>
                 </div>
             </footer>
